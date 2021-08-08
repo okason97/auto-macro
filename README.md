@@ -2,13 +2,13 @@
 script to automatically create macros for roll20 for spells in d&amp;d 3.5 using data from dndtools.net
 
 # Usage
-Execute extract_macro/extract_macro.exe and copy and paste the link to the spell in dndtools when the prompt asks for it. For example to create a macro of Vampiric Touch you have to input:
+Execute `extract_macro/extract_macro.exe` and copy and paste the link to the spell in dndtools when the prompt asks for it. For example to create a macro of Vampiric Touch you have to input:
 
 ```
 https://dndtools.net/spells/players-handbook-v35--6/vampiric-touch--2768/
 ```
 
-Then the script creates macro.txt containing the macro:
+Then the script creates `macro.txt` containing the macro:
 
 ```
 &{template:DnD35StdRoll} {{spellflag=true}} {{name=@{character_name} }} {{subtags=casts [Vampiric Touch](dndtools.net/spells/players-handbook-v35--6/vampiric-touch--2768/)}}{{School:=Necromancy }}{{Level:= Telflammar Shadowlord 2, Sorcerer 3, Wizard 3, Duskblade 3, Blighter 3, Sha'ir 3, Death Master 3, Dread Necromancer 3, Envy 4, Gluttony 4, }}{{Components:= V, S, }}{{Casting Time:= 1 standard action}}{{Range:= Touch}}{{Target:= Living creature touched}}{{Duration:= Instantaneous/1 hour; see text}}{{Saving Throw:= None}}{{Spell Resistance:= Yes}}{{notes=
